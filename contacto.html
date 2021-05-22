@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Estilos/contacto.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    <title>ABEN Box - Vinos</title>
+  </head>
+
+    <!--INICIO HEADER-->
+    <header>
+      <nav class="menu">
+        <!--QUE SEA LINEAL-->
+        <ul class='menu__list'>
+          <li class='menu__list--content'><img src="./IMAGENES/LOGO 2.png" width="100" height="100" alt="Logo comercial"></li>
+          <a href="index.html"><li class='menu__list--content'>Inicio</li></a>
+          <a href="nosotros.html"><li class='menu__list--content'>Nosotros</li></a>
+          <a href="shop.html"><li class='menu__list--content'>Shop</li></a>
+          <a href="bodegas.html"><li class='menu__list--content'>Bodegas</li></a>
+          <a href="artistas.html"><li class='menu__list--content'>Artistas</li></a>
+          <a href="contacto.html"><li class='menu__list--content'>Contacto</li></a>
+        </ul>
+      </nav>
+    </header>
+    
+    <!--INICIO FORMULARIO-->
+    <div class='cuerpo'>
+      <form action="#">
+          <fieldset>
+              <legend>¿Necesitas ayuda?</legend>
+
+              <h3 class='highlight'>Género</h3>
+              <label for="masc">Masculino</label>
+              <input type="radio" name="gender" value="Hombre" id="masc">
+            <br>
+
+              <label for="fem">Femenino</label>
+              <input type="radio" name="gender" value="Mujer" id="fem">
+            <br>
+
+              <label for="other">Otro</label>
+              <input type="radio" name="gender" value="Otro" id="other">
+
+              <h3 class='highlight'>Nombre</h3>
+              <label for="nombre">Nombre</label>
+              <input type="text" placeholder="Escribí tu nombre" name="nombre" />
+
+              <h3 class='highlight'>Apellido</h3>
+              <label for="apellido">Apellido</label>
+              <input type="text" placeholder="Escribí tu apellido" name="apellido" />
+
+              <h3 class='highlight'>Teléfono</h3>
+              <label for="tel">Teléfono</label>
+              <input type="number" placeholder="Escribí tu teléfono" name="tel" />
+
+              <h3 class='highlight'>Correo electrónico</h3>
+              <label for="mail">Correo electrónico</label>
+              <input type="email" placeholder="Ingresá tu mail" name="mail" />    
+
+              <h3 class='highlight'>Tipo de Consulta</h3>
+              <select name="talles">
+                  <option value="compra">Consulta sobre compra realizada</option>
+                  <option value="producto">Consulta sobre producto</option>
+                  <option value="pre_env">Precios y Envíos</option>
+                  <option value="otro">Otro</option>
+              </select>
+
+              <h3>Escriba su consulta</h3>
+              <textarea name="consulta" id="freetext" cols="100" rows="15"></textarea>
+              <br>
+              <br>
+
+              <input class='pressingbutton' type="submit" value="Enviar"/>
+              <br>
+              <button class='pressingbutton' type="reset">Limpiar Campos</button>
+          </fieldset>
+      </form>
+
+      <!--IMÁGEN-->
+      <img class='imagen' src="./IMAGENES/ROSE_CONTACTO.jpg" width="700px" height="800px" alt="Vino Rosado Padrillos">
+    </div>
+   
+ <!--INICIO FOOTER-->
+    <footer>
+      <nav class="footer">
+        <ul class='footer__list'>
+          <li>Contacto</li>
+          <li>Secciones</li>
+          <ul> <!--PRIMEROS CUATRO VAN A LUGARES ESPECÍFICOS DE SHOP.HTML-->
+            <a href="shop.html"><li>Vinos</li></a>
+            <a href="shop.html"><li>Wine Box</li></a>
+            <a href="shop.html"><li>Gift Box</li></a>
+            <a href="shop.html"><li>Arma tu combo</li></a>
+            <a href="nosotros.html"><li>Nosotros</li></a>
+            <a href="bodegas.html"><li>Bodegas</li></a>
+            <a href="artistas.html"><li>Artistas</li></a>
+          </ul>
+        </ul>
+      </nav>
+      <!--EMAILING-->
+    </footer>
+
+    </body>
+  </html>

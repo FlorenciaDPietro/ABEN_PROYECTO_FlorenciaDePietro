@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+/*NAV*/
+.menu, .footer {
+    background-color:rgb(13, 13, 13);
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: bold;
+    color: rgb(187, 187, 187);
+}
+
+.menu__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+nav a {
+    color: rgb(122, 121, 122);
+    text-decoration: none;
+}
+
+nav li {
+    list-style: none;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    height: 300px;
+    padding: 50px;
+    line-height: 2;
+}
+
+/*BANNER*/
+.banner {
+    height: 200px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-image: url('../IMAGENES/HORIZONTAL_COMBOS.jpg');
+    background-size: cover;
+}
+
+/*SECCIONES*/
+
+.seccion{
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: 40vh;
+    grid-template-areas: 'first' 'second' 'third';
+    column-gap: 50px;
+    justify-content: space-evenly;
+}
+
+.seccion__vinos{
+    grid-area: 'first';
+    padding-top:40%;
+    background-image: url('../IMAGENES/IMG_7902.JPG');
+    background-size: cover;
+}
+
+.seccion__winebox{
+    grid-area:'second';
+    padding-top:40%;
+    background-image: url('../IMAGENES/Mesa\ de\ trabajo\ 1\ copia\ 2-100.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+
+.seccion__gift {
+    grid-area: 'third';
+    padding-top:40%;
+    background-image: url('../IMAGENES/WhatsApp\ Image\ 2020-12-01\ at\ 18.06.00\ \(1\).jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.seccion__vinos:hover, .seccion__winebox:hover, .seccion__gift:hover {
+    box-shadow: 0px 0px 30px -5px black; 
+}
+
+.seccion__vinos:hover h1, .seccion__winebox:hover h1, .seccion__gift:hover h1{
+    background-color: rgb(245, 245, 245);
+    cursor: pointer;
+}
+
+
+/*TEXTOS*/
+
+.middleSection {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+
+    padding-top: 300px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 30px;
+    justify-items: center;
+    align-items:center;
+}
+
+.middleSection__left {
+    grid-column: 1 / 2;
+    grid-row: 1 / span 2;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    color: rgb(51, 88, 75);
+    font-size: 25px;
+    overflow: auto;
+}
+
+.middleSection__right--up {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    justify-items: stretch;
+}
+
+.middleSection__right--down {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    justify-items: stretch;
+}
+
+/*TÍTULOS*/
+.highlight {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    color: rgb(140, 51, 31);
+    background-color: rgba(245, 245, 245, 0.658);
+    }
+
+
+
+
+
+
