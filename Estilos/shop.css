@@ -32,14 +32,38 @@ nav li {
     list-style: none;
 }
 
-.footer__list {
-    display: flex;
-    flex-direction: column;
+/* INICIO FOOTER */
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: 40vh;
+    grid-template-areas: 'first' 'second' 'third';
+    column-gap: 50px;
     justify-content: space-evenly;
-    align-content: center;
-    height: 200px;
-    padding: 50px;
-    line-height: 2;
+    justify-items: center;
+    padding-top: 40px;
+}
+
+.footer h3 {
+    font-weight: bold;
+}
+
+.footer__navegacion {
+    grid-area: 'first';
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.footer__contacto {
+    grid-area: 'second';
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.footer__redes {
+    grid-area: 'third';
+    font-size: 20px;
+    line-height: 50px;
 }
 
 
